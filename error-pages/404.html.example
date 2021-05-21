@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>404</title>
+    <meta name="description" content="Latest updates and statistic charts">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <link href="error-pages/assets/error.css" rel="stylesheet" type="text/css" />
+    <link href="error-pages/assets/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div class="kt-grid kt-grid--ver kt-grid--root">
+    <div class="kt-grid__item kt-grid__item--fluid kt-grid  kt-error-v5 background-erro" style="background-image: url('/error-pages/assets/bg_erro_404.png');">
+        <div class="kt-error_container">
+            <span class="kt-error_title">
+                <h1>Ixi!</h1>
+            </span>
+            <div class="sub-mensagem" style="margin-left: 15px!important;margin-top: -60px!important;">
+                <p class="kt-error_subtitle">
+                    Erro 404
+                </p>
+                <p class="kt-error_description">
+                    Página não encontrada, tente uma das abaixo...
+                    URLS
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
