@@ -1,0 +1,4 @@
+[submodule "docker-init"]
+	path = docker-init
+	url = git@github.com:r3ch1/docker-init.git
+	branch = main
