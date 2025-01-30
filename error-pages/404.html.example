@@ -32,6 +32,7 @@
             display: block;
             height: 100%;
             padding: 10px 0;
+            text-decoration: none;
         }
         li:hover {
             background-color: #ccc;
