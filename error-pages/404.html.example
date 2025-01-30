@@ -5,31 +5,52 @@
     <title>404</title>
     <meta name="description" content="Latest updates and statistic charts">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
-    <link href="error-pages/assets/error.css" rel="stylesheet" type="text/css" />
-    <link href="error-pages/assets/style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: 1px solid #ccc;
+            border-radius:20px;
+        }
+        li:first-child {
+            border:0;
+        }
+        li {
+            border-top:1px solid #ccc;
+        }
+        li:first-child {
+            border-top-right-radius:20px;
+            border-top-left-radius:20px;
+        }
+        li:last-child {
+            border-bottom-right-radius:20px;
+            border-bottom-left-radius:20px;
+        }
+        a {
+            width: 100%;
+            display: block;
+            height: 100%;
+            padding: 10px 0;
+        }
+        li:hover {
+            background-color: #ccc;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="kt-grid kt-grid--ver kt-grid--root">
-    <div class="kt-grid__item kt-grid__item--fluid kt-grid  kt-error-v5 background-erro" style="background-image: url('/error-pages/assets/bg_erro_404.png');">
-        <div class="kt-error_container">
-            <span class="kt-error_title">
-                <h1>Ixi!</h1>
-            </span>
-            <div class="sub-mensagem" style="margin-left: 15px!important;margin-top: -60px!important;">
-                <p class="kt-error_subtitle">
-                    Erro 404
-                </p>
-                <p class="kt-error_description">
-                    Página não encontrada, tente uma das abaixo...
-                    URLS
-                </p>
-            </div>
-        </div>
-    </div>
+<h1 style="text-align:center">404</h1>
+<div style="position: absolute;
+    width: 300px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align:center;">
+    <ul>
+        URLS
+    </ul>
 </div>
 
 </body>

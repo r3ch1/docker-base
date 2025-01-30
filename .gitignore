@@ -5,3 +5,4 @@ docker/dumps
 docker/sites-avaliable/*.conf
 www/
 error-pages/404.html
+.history

@@ -45,8 +45,7 @@ while IFS= read -r line; do
     continue
     fi
 
-  echo "<p style='text-align:center'><a href='http://${line/_nginx/}.localhost'>${line/_nginx/}.localhost</a></p>" >> www/index.html
-  urls+="<br/><a href='http://${line/_nginx/}.localhost'>→ ${line/_nginx/}.localhost</a>";
+  urls+="<li><a href='http://${line/_nginx/}.localhost' target="_blank">→ ${line/_nginx/}.localhost</a></li>";
   echo "  #${line/_nginx/}.localhost;
   server {
     proxy_read_timeout 300;
@@ -70,4 +69,4 @@ sed "s!URLS!${urls}!ig" error-pages/404.html.example > error-pages/404.html
 echo -e " ${STATUSCOLOR}done${NC}"
 
 rm -rf teste
-docker-compose restart nginx
+docker compose restart nginx
