@@ -11,7 +11,7 @@ services:
 #      - /var/run/docker.sock:/var/run/docker.sock
 #      - portainer_data:/data
 #    networks:
-#      - fintools
+#      - base_network
 #  keycloak:
 #    image: quay.io/keycloak/keycloak:8.0.1
 ##    restart: always
@@ -26,7 +26,7 @@ services:
 #      - KEYCLOAK_USER=admin
 #      - KEYCLOAK_PASSWORD=admin
 #    networks:
-#      - fintools
+#      - base_network
 #    container_name: keycloak
   sonarqube:
     image: sonarqube:latest
@@ -35,7 +35,7 @@ services:
       - "9000:9000"
       - "9092:9092"
     networks:
-      - fintools
+      - base_network
     container_name: sonar
 
   nginx:
@@ -51,7 +51,7 @@ services:
     environment:
       - NGINX_PORT=80
     networks:
-      - fintools
+      - base_network
     container_name: nginx
 
   mysql:
@@ -69,7 +69,7 @@ services:
     ports:
       - 3306:3306
     networks:
-      - fintools
+      - base_network
 
   mongo:
     image: mongo
@@ -81,14 +81,14 @@ services:
     ports:
       - 27017:27017
     networks:
-      - fintools
+      - base_network
 
 volumes:
   portainer_data:
 
 networks:
-  fintools:
-    name: fintools
+  base_network:
+    name: base_network
     driver: bridge
     ipam:
       config:
